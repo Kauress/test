@@ -1,0 +1,13 @@
+<%- include partials/navbar.ejs %>
+<div class="container my-3">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h2><i class= 'fa fa-pencil fa-2x'></i>Please  input 2 numbers</h2>
+      <form action="/sum"  method="POST" >
+<input type="number" placeholder="number1" name="number1"/> <br>
+<input type="number" placeholder="number2" name="number2"/> <br>
+<button class="btn btn-success btn-sm my-2" value="Submit" type="submit">Submit</button>
+</form>
+</div> <!--end of col-sm-12-->
+</div><!--end of row-->
+</div><!-- end of container-->

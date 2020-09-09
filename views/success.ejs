@@ -1,0 +1,31 @@
+<%- include partials/navbar.ejs %>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8 text-center">
+<h2 class="cursivetext-2 text-center">Result: <%= result %></h2>
+<img src="/img/luna2.png">
+   </div> <!-- end of col-sm-6 -->
+   <div class="col-sm-4 text-left">
+<h2>Add 2 numbers using only API calls</h2>
+<ul>
+  <li>Set up server and check it works</li>
+  <li>On the main page whose route is "/ " set up a form</li>
+  <li>The input types are  of the type = "number" This serves as basic client side validation</li>
+  <li>Each input type has a name attribute whose value is "number1" and "number2" respectively</li>
+  <li>The form has a method and action attribute</li>
+  <li>The value of the method attribute is "POST" since we are posting data to the server</li>
+  <li>The value of the action attribute specifies where to send the data, which in this case is "/sum"</li>
+  <li>The server will receive the data when the submit button is clicked</li>
+  <li>The body of the request object(req.body) will contain the input data </li>
+  <li>In order to retrieve the 2 numbers access the number1 and number2 properties of the  req.body</li>
+  <li>These are the values of the name attributes of the 2 number input elements in the form</li>
+  <li>The numbers retrieved are strings, therefore they must be explicitly coerced to  numbers using the Number() method</li>
+  <li>If you do not explicitly coerce them into numbers then string concatenation will occur</li>
+  <li>You can assign the result of the coercion of each number to a variable each </li>
+  <li>You can then add the 2 numbers. The result of the addition is referenced by a variable called sum</li>
+  <li>To display the result you can either render a new template and pass in the value of the result variable to the template</li>
+  <li>Or you can use res.end(JSON.stringify(sum)) to render the result</li>
+  </ul>
+  </div> <!-- end of col-sm-6 -->
+</div> <!-- end of row -->
+</div><!--end of container-->
