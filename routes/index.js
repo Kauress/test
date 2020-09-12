@@ -10,8 +10,12 @@ router.post('/sum', function(req,res){
   const num1 =Number(req.body.number1);
   const num2 =Number(req.body.number2);
   const sum = num1/num2
-   console.log(req.body);
+  if( sum = 0){
+    res.render("error", {errormessage: "Divided by zero");
+  } else {
    res.render("success",  {result: sum})
+  } // end of else 
+   console.log(req.body);
    //res.end(JSON.stringify(sum));
 })
 
