@@ -11,7 +11,8 @@ router.post('/sum', function(req,res){
   const num2 =Number(req.body.number2);
   const sum = num1/num2
   if( sum = 0){
-    res.render("error", {errormessage: "Divided by zero");
+   err = "divided by zero"
+    res.render("error", {errormessage: err);
   } else {
    res.render("success",  {result: sum})
   } // end of else 
