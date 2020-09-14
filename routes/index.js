@@ -13,7 +13,7 @@ router.post('/sum', function(req,res){
   if(Number.isFinite(sum) === true){
      res.render("success",  {result: sum});
 }else{
-    res.render("error", {errormessage: "cannot divide by 0"}
+    res.render("error", {errormessage: "cannot divide by 0"});
 }
    console.log(req.body);
    //res.end(JSON.stringify(sum));
